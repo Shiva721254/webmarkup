@@ -1,12 +1,93 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap'); 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-    color: black;
 }
 
-p {
-    color:black;
+li, a, button {
+    font-family: "Notable", sans-serif;
+    font-weight: 500;
     font-size: 16px;
+    padding: 10px;
+    color: #023867;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start
+
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.logo {
+    cursor: pointer;
+    height: auto;
+    width: 200px;
+    margin-right: auto;
+    padding: 20px;
+}
+.nav-links{
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    
+    
+    
+}
+.nav-links li {
+    display: flexbox;
+    padding: 20px 20px;
+    border: 2px solid rgb(0, 145, 116) ;
+    flex-direction: row;
+    text-align: center;
+
+    
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+
+@media only screen and (min-width: 1280px) and (max-device-width: 1280px) and (orientation: landscape),
+       only screen and (min-device-width: 1280px) and (orientation: landscape),
+       only screen and (min-width: 1280px) {
+  font-size: 20px;
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1279px) {
+  font-size: 18px ;
+}
+
+/* Styles for smartphones (viewport width <= 480px, pixel ratio = 3) */
+@media only screen and (max-width: 480px) {
+  font-size: 14px;
 }
