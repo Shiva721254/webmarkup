@@ -12,9 +12,19 @@ li, a, button {
     font-weight: 100;
     font-size: 12px;
     padding: 10px;
-    color: #5b5c01;
-    display: flex;
+    color: #0c0c00;
+    
 }
+article p {
+    background-color: #fdfbfb;
+}
+
+article > p {
+    background-color:  rgba(227, 216, 185, 0.555);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
 ol {
     list-style-type: decimal;
     background-color: #ff0000;
@@ -42,7 +52,7 @@ p {
 }
 
  h1, h2 {
-    padding: 20px,;
+    padding: 20px;
  }
 
 button {
@@ -57,6 +67,7 @@ button {
 button:hover {
     background-color: #0088a9cc;
 }
+.cookie-message
 nav {
     display: flex;
     
@@ -64,8 +75,42 @@ nav {
 section {
     padding: 20px;
 }
+.about-beatrixpark {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.activities {
+    border: #009174 dashed 3px;
+    
+}
+.activities:nth-child(3) {
+    background: rgb(19, 107, .5
+    );
+}
+.static-position {
+position: static;
+border: 3px solid rgb(7, 101, 62);
+}
 .aside {
-    border: rebeccapurple, solid 3px;
+    border-color: #009174;
+    border-style: double;
+    border-width: thick;
+}
+.backgroundimage {
+display: flex;
+flex-direction: column;
+    
+}
+
+.beatrix-feature {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    columns: 2;
+    column-gap: 10px;
+    column-fill: balance;
+    background-color: #b2eed9;
+    column-rule: #ff0000 double 4px;
 }
 .community-hub {
     display: flex;
@@ -89,12 +134,33 @@ section {
 width: 400px;
 position: relative;
 }
+.cookie-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+   
+}
+.cookie-message button.cookie-close {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 
-.backgroundimage{
-    display: flexbox;
-    width: 60%;
 }
 
+.backgroundimage{
+    display: flex;
+    width: 60%;
+}
+ .float-right{
+    display:block;
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    float: right;
+}
 .logo {
     cursor: pointer;
     height: auto;
@@ -113,7 +179,7 @@ position: relative;
 }
 
 .nav-links li {
-    display: flexbox;
+    display: flex;
     padding: 20px 20px;
     border: 2px solid #009174 ;
     flex-direction: row;
@@ -126,8 +192,17 @@ position: relative;
     color: #0088a9;
 }
 
+.position-fixed {
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid rebeccapurple;
+}
 .table {
-    background-color: cmyk(0,30,81,14);
     border: 2px solid #ff0000;
     padding-left: 40px;
 }
