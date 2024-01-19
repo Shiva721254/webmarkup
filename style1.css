@@ -76,18 +76,3 @@ button:hover {
 }
 
 
-@media only screen and (min-width: 1280px) and (max-device-width: 1280px) and (orientation: landscape),
-       only screen and (min-device-width: 1280px) and (orientation: landscape),
-       only screen and (min-width: 1280px) {
-  font-size: 20px;
-
-}
-
-@media only screen and (min-width: 481px) and (max-width: 1279px) {
-  font-size: 18px ;
-}
-
-/* Styles for smartphones (viewport width <= 480px, pixel ratio = 3) */
-@media only screen and (max-width: 480px) {
-  font-size: 14px;
-}
